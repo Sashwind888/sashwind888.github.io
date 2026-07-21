@@ -1,17 +1,61 @@
 ---
 layout: home
-
 ---
+
+<style>
+  /* 全局背景：黑色星空 + 模糊效果 */
+  /* 其他样式... */
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+  
+    /* 1. 设置背景图 */
+    background-image: url('/bg.png');
+  
+    /* 2. 让图片铺满屏幕并保持比例 */
+    background-size: cover;
+  
+    /* 3. 固定背景，不随滚动条滚动 */
+    background-attachment: fixed;
+  
+    /* 4. 图片居中显示 */
+    background-position: center;
+  
+    /* 5. (可选) 加个纯黑或半透明底色，防止图片加载慢时一片空白 */
+    background-color: #0b0b0b;
+  
+    /* 文字颜色设为白色 */
+    color: #ffffff !important;
+  }
+
+  /* 覆盖主题默认文字颜色，让所有文字变白 */
+  .wrapper, .page-content, .post-content, h1, h2, h3, h4, p, a, li {
+    color: #ffffff !important;
+  }
+
+  /* 但链接在悬停时保留一点交互感 */
+  a:hover {
+    color: #20C997 !important;
+  }
+
+  /* 让页面内容透明，背景透出来 */
+  .wrapper {
+    background: transparent !important;
+  }
+
+  /* 徽章图片本身是白色的，不用改，但如果有纯文本需要白色 */
+</style>
+
 <!-- ===================== 主标题区 ===================== -->
 <div align="center">
   <h1>🚀 欢迎来到Sashwind的主页</h1>
   
-  <!-- 动态打字机效果 -->
+  <!-- 动态打字机效果：颜色改为白色 -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=600&size=28&duration=4500&pause=1000&color=20C997&center=true&vCenter=true&width=500&lines=开源贡献者;猫猫(划掉)" alt="动态标题">
+    <img src="https://readme-typing-svg.demolab.com?font=Noto+Sans+SC&weight=600&size=28&duration=4500&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=开源贡献者;猫猫(划掉)" alt="动态标题">
   </a>
 </div>
-
 
 <!-- ===================== 联系方式 ===================== -->
 <h2 align="center">📬 联系我</h2>
@@ -22,5 +66,4 @@ layout: home
   <a href="mailto:Ghj20200403@163.com">
     <img src="https://sashwind888.github.io/email.svg" alt="mail">
   </a>
-  
 </p>
